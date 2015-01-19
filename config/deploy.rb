@@ -1,5 +1,5 @@
 set :application, 'wedding'
-set :repo_url, 'git@github.com:evanpon/my_repo.git'
+set :repo_url, 'git@github.com:evanpon/wedding.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
