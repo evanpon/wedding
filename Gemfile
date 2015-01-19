@@ -44,5 +44,6 @@ gem 'capistrano-bundler'
 
 
 gem 'haml-rails'
+gem 'json', '1.8.1'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
