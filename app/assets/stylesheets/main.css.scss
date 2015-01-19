@@ -1,0 +1,21 @@
+html {
+  background-image: image-url('light-blue.jpg');  
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 29px;
+  color: rgb(51, 76, 73);
+}
+
+.yellow {
+  background-image: image-url('yellow.jpg');    
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.box {
+  width: 500px;
+  padding: 50px;
+}
