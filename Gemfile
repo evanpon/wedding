@@ -5,6 +5,7 @@ gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'mysql2', '0.3.14'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -35,13 +36,14 @@ end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+gem 'thin'
 
 # Use Capistrano for deployment
 gem 'capistrano'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
 
+
+gem 'haml-rails'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
