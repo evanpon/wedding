@@ -26,4 +26,5 @@ Wedding::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+  SECURITY = YAML.load_file(Rails.root + 'config/security.yml')
 end
