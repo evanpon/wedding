@@ -1,41 +1,23 @@
 html {
-  background: image-url('grimace.jpg') no-repeat;
-  background-size: 1400px;
-  background-attachment: fixed;  
+//  background: image-url('grimace.jpg') no-repeat;
+//  background-size: 1400px;
+//  background-attachment: fixed;
   font-family: 'Droid Sans', sans-serif;
   font-size: 29px;
   color: rgb(51, 76, 73);
 }
 
-.yellow {
-  background-image: image-url('yellow.jpg');    
-}
-
-.center {
-  margin: auto;
-  text-align: center;
-  margin-top: 200px;
-}
-
-.box {
-  width: 500px;
-  padding: 50px;
-}
-
 .section {
-//  background-image: image-url('yellow.jpg');
   height: 800px;
 }
 
 #one {
   height: 800px;
-  background-image: image-url('light-blue.jpg');
 }
 
 
 #two {
   height: 400px;
-  background-image: image-url('transparent.png');
   
 }
 
