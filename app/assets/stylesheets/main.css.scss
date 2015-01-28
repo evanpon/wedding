@@ -1,6 +1,5 @@
 html {
   font-family: 'Droid Sans', sans-serif;
-  font-size: 29px;
   color: rgb(51, 76, 73);
   
 }
@@ -20,6 +19,7 @@ a:hover {
   position: fixed;
   width: 100%;
   top: 0;
+  font-size: 1.8em;
 }
 #header li {
   display: inline;
@@ -34,10 +34,10 @@ a:hover {
 }
 h3 {
   color: rgb(255, 139, 56);
-  font-size: 32px;
+  font-size: 1.5em;
 }
 h4 {
-  font-size: 24px;
+  font-size: 1.1em;
   color: rgb(255, 139, 56);
 }
 #date {
@@ -53,8 +53,9 @@ h4 {
   font-family: 'Open Sans', 'Droid Sans', sans-serif;
 }
 .white_section {
-  padding: 85px 100px 60px 100px;
-  font-size: 24px;  
+  padding: 85px 100px 50px 100px;
+//  font-size: 24px;
+  font-size: 1.2em;
 }
 .left_side {
   width: 70%;
@@ -63,7 +64,7 @@ p {
   padding-top: 25px;
 }
 .blurb {
-  font-size: 20px;
+  font-size: 0.9em;
   margin-bottom: 20px;
 }
 .sidebar {
