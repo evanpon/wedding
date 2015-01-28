@@ -2,6 +2,7 @@ html {
   font-family: 'Droid Sans', sans-serif;
   font-size: 29px;
   color: rgb(51, 76, 73);
+  
 }
 
 a {
@@ -14,8 +15,11 @@ a:hover {
   text-decoration: underline;
 }
 #header {
-  padding: 30px;
-  background-color: rgba(242, 242, 242, 0.85098);
+  padding: 22px;
+  background-color: rgba(242, 242, 242, 0.8598);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 #header li {
   display: inline;
@@ -49,7 +53,7 @@ h4 {
   font-family: 'Open Sans', 'Droid Sans', sans-serif;
 }
 .white_section {
-  padding: 50px 100px;
+  padding: 85px 100px 60px 100px;
   font-size: 24px;  
 }
 .left_side {
