@@ -1,10 +1,96 @@
 #header
   %ul
     %li
-      VENUE
+      = link_to 'VENUE', '#venue'
     %li
-      LODGING
+      = link_to 'LODGING', '#lodging'
     %li
-      ACTIVITIES
+      = link_to 'ACTIVITIES', '#activities'
+    %li
+      = link_to 'RSVP', '#rsvp'
       
-.section#one
+= image_tag('dsc02939.jpg', width: '100%')
+    
+#date
+  8/15/15
+
+%a{name: 'venue'}
+#venue
+  .white_section
+    .sidebar
+      %h4
+        When
+      .blurb
+        Sometime during the day
+        %br
+        Saturday, August 15th, 2015
+      %h4
+        Where
+      .blurb
+        Parkdale, OR
+    .left_side
+      %h3 
+        Clarke Mountain Estate
+      %p
+        The Clarke Mountain Estate is actually the private home of a good friend of Katie's aunt. We will be getting married on the house grounds with a gorgeous view of Mt. Hood in the background. The cocktail hour and reception will follow at the same location.
+    
+      %p
+        The wedding and reception will both be outdoors. Please wear suitable shoes! We expect it to be sunny and warm, but please be prepared for any eventuality. Including an asteroid hitting the Earth - it could happen!
+      
+    
+= image_tag('clarkes.jpg', width: '100%')
+
+%a{name: 'lodging'}
+#lodging
+  .white_section
+    .sidebar
+      %h4
+        Hotels
+      .blurb
+        = link_to('Hood River Hotel', 'http://www.hoodriverhotel.com/')
+        %br
+        = link_to('Vagabond Lodge', 'http://www.vagabondlodge.com/')
+        %br
+        = link_to('Columbia Gorge Hotel', 'http://www.columbiagorgehotel.com/')
+        %br 
+        = link_to('Comfort Suites', 'http://www.comfortsuites.com/hotel-hood_river-oregon-OR066')
+      %h4
+        Homes
+      .blurb
+        Link to spreadsheet?
+    .left_side
+      %h3
+        Lodging
+      %p
+        Unfortunately the Hood River area during the summery is 
+        %i very
+        popular. All these other people have the nerve to be staying in the same place as our friends and family! This means that it would be best to book housing as soon as possible.
+      %p
+        Most homes for rent require a 4 night minimum during the summer. We think you'll find plenty of things to occupy yourself for that time in Hood River, but we understand blah blah.
+= image_tag('dubrovnik.jpg', width: '100%')
+%a{name: 'activities'}  
+#activities
+  .white_section
+    .sidebar
+      %h4
+        Hiking
+      .blurb
+        = link_to('Multnomah Falls', 'http://www.portlandhikersfieldguide.org/wiki/Multnomah_Falls_Hike')
+      %h4
+        On the river
+      .blurb
+        Windsurfing
+        %br
+        Kiteboarding
+        %br
+        River rafting
+    .left_side
+      %h4
+        Activities
+      %p
+        There's so much to do! Fruit loops! Lucky charms!
+
+#closing_image      
+  = image_tag('bend.jpg', width: '100%')
+%a{name: 'rsvp'}
+#rsvp
