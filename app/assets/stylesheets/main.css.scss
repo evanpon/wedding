@@ -1,9 +1,10 @@
 html {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: rgb(51, 76, 73);
-  
 }
-
+#content {
+  min-width: 1000px;
+}
 a {
   text-decoration: none;
 }
@@ -20,6 +21,7 @@ a:hover {
   width: 100%;
   top: 0;
   font-size: 32px;
+  z-index: 2;
 }
 #header li {
   display: inline;
@@ -40,17 +42,22 @@ h4 {
   font-size: 24px;
   color: rgb(255, 139, 56);
 }
+#first_photo {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
 #date {
   position: absolute;
   color: white;
   font-size: 84px;
-  top: 450px;
+  transform: translateY(-45%);
+  text-align: center;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-family: 'Open Sans', 'Droid Sans', sans-serif;
+  top: 45%;
+  font-family: 'Droid Sans', sans-serif;
 }
 .white_section {
   padding: 85px 100px 50px 100px;
