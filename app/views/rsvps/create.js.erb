@@ -4,3 +4,4 @@
 <% else %>
   $("#rsvp_form").html("<h4>Bummer <%= j(@rsvp.name) %>! We'll miss you.</h4>")
 <% end %>
+$('html,body').animate({scrollTop: $("#rsvp").offset().top},'slow');
