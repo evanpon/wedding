@@ -1,0 +1,6 @@
+
+<% if @rsvp.attending %>
+  $("#rsvp").replaceWith("<div id='rsvp_response'><h4>Thanks <%= j(@rsvp.name) %>! Can't wait to celebrate with you!</h4></div>")
+<% else %>
+  $("#rsvp").replaceWith("<div id='rsvp_response'><h4>Bummer <%= j(@rsvp.name) %>! We'll miss you.</h4></div>")
+<% end %>

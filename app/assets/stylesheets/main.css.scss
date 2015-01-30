@@ -1,3 +1,5 @@
+$orange: rgb(255, 139, 56);
+
 html {
   font-family: 'Roboto', sans-serif;
   color: rgb(51, 76, 73);
@@ -35,12 +37,12 @@ a:hover {
   clear: both;
 }
 h3 {
-  color: rgb(255, 139, 56);
+  color: $orange;
   font-size: 32px;
 }
 h4 {
   font-size: 24px;
-  color: rgb(255, 139, 56);
+  color: $orange;
 }
 #first_photo {
   position: relative;
@@ -80,4 +82,121 @@ p {
 }
 #closing_image {
   font-size: 0;
+}
+#rsvp {
+//  margin-top: 100px;
+  width: 502px;
+  margin: 100px auto;
+  text-align: center;
+}
+.field {
+//  text-align: left;
+}
+input[type="text"] {
+  border-radius: 6px;
+  border: 1px solid $orange;
+  height: 35px;
+  width: 500px;
+  margin: 10px auto;
+  padding: 5px 10px;
+  font-size: 26px;
+}
+
+textarea {
+  border-radius: 6px;
+  border-color: $orange;
+  border-width: 1px;
+  height: 100px;
+  width: 500px;
+  margin: 10px auto;
+  padding: 5px 10px;
+  font-size: 26px;
+}
+
+
+:root input[type="checkbox"] { /* :root here acting as a filter for older browsers */
+  position: absolute;
+  opacity: 0;
+}
+
+:root input[type="checkbox"].ios-switch + span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3em;  height: 1em;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 999px;
+  margin: 0 .5em;
+  background: white;
+  background-image: linear-gradient(rgba(0,0,0,.1), transparent),
+                    linear-gradient(90deg, hsl(120, 90%, 60%) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-origin: border-box;
+  background-clip: border-box;
+  overflow: hidden;
+  transition-duration: .4s;
+  transition-property: padding, width, background-position, text-indent;
+  box-shadow: 0 .1em .1em rgba(0,0,0,.2) inset,
+              0 .45em 0 .1em rgba(0,0,0,.05) inset;
+  font-size: 150%; /* change this and see how they adjust! */
+}
+
+:root input[type="checkbox"].ios-switch:checked + span {
+  padding-left: 2em;  width: 1em;
+  background-position: 0 0;
+}
+
+:root input[type="checkbox"].ios-switch + span:before {
+  content: 'Yes';
+  float: left;
+  width: 1.65em; height: 1.65em;
+  margin: -.1em;
+  border: 1px solid rgba(0,0,0,.35);
+  border-radius: inherit;
+  background: white;
+  background-image: linear-gradient(rgba(0,0,0,.2), transparent);
+  box-shadow: 0 .1em .1em .1em hsla(0,0%,100%,.8) inset,
+              0 0 .5em rgba(0,0,0,.3);
+  color: white;
+  text-shadow: 0 -1px 1px rgba(0,0,0,.3);
+  text-indent: -2.5em;
+}
+
+:root input[type="checkbox"].ios-switch:active + span:before {
+  background-color: #eee;
+}
+
+:root input[type="checkbox"].ios-switch:focus + span {
+  box-shadow: 0 .1em .1em rgba(0,0,0,.2) inset,
+              0 .45em 0 .1em rgba(0,0,0,.05) inset,
+              0 0 .4em 1px rgba(255,0,0,.5);
+}
+
+:root input[type="checkbox"].ios-switch + span:before,
+:root input[type="checkbox"].ios-switch + span:after {
+  font: bold 60%/1.9 sans-serif;
+  text-transform: uppercase;
+}
+
+:root input[type="checkbox"].ios-switch + span:after {
+  content: 'No';
+  float: left;
+  text-indent: .5em;
+  color: rgba(0,0,0,.45);
+  text-shadow: none;
+}
+
+span.label {
+  color: rgb(153, 153, 153);
+  font-size: 26px;
+}
+#attending {
+//  width: 300px;
+text-align: left;
+  margin: auto;
+  border: 1px solid black; 
+}
+#rsvp_response {
+  text-align: center;
+  margin: 50px auto;
 }
