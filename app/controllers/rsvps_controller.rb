@@ -2,6 +2,9 @@ class RsvpsController < ApplicationController
 
   def create
     @rsvp = Rsvp.new(rsvp_params)
+    @rsvp.name.strip!
+    @rsvp.guests.strip!
+    @rsvp.message.strip!
     respond_to do |format|
       if @rsvp.save        
         format.html { 

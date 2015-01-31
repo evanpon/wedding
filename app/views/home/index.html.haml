@@ -47,17 +47,25 @@
       %h4
         Hotels
       .blurb
-        = link_to('Hood River Hotel', 'http://www.hoodriverhotel.com/')
+        = link_to('Hood River Hotel', 'http://www.hoodriverhotel.com/', target: '_blank')
         %br
-        = link_to('Vagabond Lodge', 'http://www.vagabondlodge.com/')
+        = link_to('Vagabond Lodge', 'http://www.vagabondlodge.com/', target: '_blank')
         %br
-        = link_to('Columbia Gorge Hotel', 'http://www.columbiagorgehotel.com/')
+        = link_to('Columbia Gorge Hotel', 'http://www.columbiagorgehotel.com/', target: '_blank')
         %br 
-        = link_to('Comfort Suites', 'http://www.comfortsuites.com/hotel-hood_river-oregon-OR066')
+        = link_to('Comfort Suites', 'http://www.comfortsuites.com/hotel-hood_river-oregon-OR066', target: '_blank')
       %h4
         Homes
       .blurb
-        Link to spreadsheet?
+        = link_to('Spreadsheet', 'https://docs.google.com/spreadsheets/d/1twnG8jPVD6hZ6t2-D8_U3ryPT-EFOf0NLeEu337-mgQ/edit#gid=0', target: '_blank')
+        %br
+        = link_to('hrvacations.com', 'http://www.hrvacations.com/', target: '_blank')
+        %br
+        = link_to('vrbo.com', 'http://www.vrbo.com/vacation-rentals/usa/oregon/mt-hood-the-gorge/hood-river', target: '_blank')
+        %br
+        = link_to('homeaway.com', 'http://www.homeaway.com/vacation-rentals/oregon/hood-river/r8186', target: '_blank')
+        %br
+        = link_to('vacasa.com', 'https://www.vacasa.com/usa/Oregon/Hood-River/?submit=Search&wz=2&search=Hood+River%2C+OR&neighbor=1&arrival=&departure=&nights=&flexStart=&flexEnd=&adults=1&children=0&pets=0&minrate=0&maxrate=100000&minbeds=0&maxbeds=100&minbaths=1&maxbaths=100&display=tile&gridS=01%2F31%2F2015&RegionID=3&CityID=28', target: '_blank')
     .left_side
       %h3
         Lodging
@@ -66,32 +74,45 @@
         %i very
         popular. All these other people have the nerve to be staying in the same place as our friends and family! This means that it would be best to book housing as soon as possible.
       %p
-        Most homes for rent require a 4 night minimum during the summer. We think you'll find plenty of things to occupy yourself for that time in Hood River, but we understand blah blah.
+        Most homes for rent require a 4 (or more!) night minimum during the summer. If you can stay that long, we think you'll find plenty to do! On the right, we have a spreadsheet that has quick summaries of many of the houses near downtown Hood River. You can find more houses online, with the most popular sites listed. Note that there is significant overlap between some of the sites - #{link_to 'hrvacations.com', 'http://www.hrvacations.com/'} lists many of its properties on #{link_to('homeaway.com', 'http://www.homeaway.com/')} and #{link_to 'vrbo.com', 'http://www.vrbo.com/'}.
+
     .clear
-= image_tag('dubrovnik.jpg', width: '100%')
+= image_tag('mustache.jpg', width: '100%')
 #activities
   .white_section
     .sidebar
       %h4
         Hiking
       .blurb
-        = link_to('Multnomah Falls', 'http://www.portlandhikersfieldguide.org/wiki/Multnomah_Falls_Hike')
+        = link_to('Multnomah Falls', 'http://www.portlandhikersfieldguide.org/wiki/Multnomah_Falls_Hike', target: '_blank')
+        %br
+        = link_to('Columbia Gorge Waterfall Loop', 'http://www.portlandoctopus.com/hike-the-columbia-gorge-waterfall-loop/', target: '_blank')
+        %br
+        = link_to('Tamanawas Falls', 'http://thegorgeismygym.com/tamanawas-falls/', target: '_blank')
+        %br
+        = link_to('Dog Mountain', 'http://thegorgeismygym.com/dog-mountain/', target: '_blank')
       %h4
-        On the river
+        On the water
       .blurb
-        Windsurfing
+        = link_to('Windsurfing', 'http://hoodriver.org/windsurfing', target: '_blank')
         %br
-        Kiteboarding
+        = link_to('Kiteboarding', 'http://hoodriver.org/kiteboarding', target: '_blank')
         %br
-        River rafting
+        = link_to('Whitewater rafting', 'http://hoodriver.org/rafting-kayaking', target: '_blank')
+        %br
+        = link_to('Stand-up paddleboarding', 'http://hoodriver.org/standup-paddle-boarding', target: '_blank')
+      %h4
+        Other
+      .blurb
+        = link_to('Fruit Loop', 'http://hoodriverfruitloop.com/', target: '_blank')
     .left_side
       %h3
         Activities
       %p
-        There's so much to do! Fruit loops! Lucky charms!
+        There are an amazing variety of activities to do in Hood River. We've listed just a few of them to the right. More to come!
     .clear
 
-= image_tag('mustache.jpg', width: '100%')  
+= image_tag('dubrovnik.jpg', width: '100%')  
 
 #rsvp
   .white_section
