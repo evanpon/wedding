@@ -7,10 +7,12 @@
     %li
       = link_to 'ACTIVITIES', '#activities'
     %li
+      = link_to 'HOW WE MET', '#meet'
+    %li
       = link_to 'RSVP', '#rsvp'
 
 #first_photo     
-  = image_tag('dsc02939.jpg', width: '100%')
+  = image_tag('plitvice.jpg', width: '100%')
     
   #date
     08/15/15
@@ -21,7 +23,7 @@
       %h4
         When
       .blurb
-        Sometime during the day
+        Afternoon
         %br
         Saturday, August 15th, 2015
       %h4
@@ -32,10 +34,10 @@
       %h3 
         Clarke Mountain Estate
       %p
-        The Clarke Mountain Estate is actually the private home of a good friend of Katie's aunt. We will be getting married on the house grounds with a gorgeous view of Mt. Hood in the background. The cocktail hour and reception will follow at the same location.
+        Our wedding will be at the Clarke Mountain Estate. This special location is the private home of a good friend of Katie's aunt, and the grounds boast beautiful flower gardens and a fantastic view of Mt. Hood. The cocktail hour and reception will follow at the same location.
     
       %p
-        The wedding and reception will both be outdoors. Please wear suitable shoes! We expect it to be sunny and warm, but please be prepared for any eventuality. Including an asteroid hitting the Earth - it could happen!
+        The wedding and reception will both be outdoors, and we expect it to be sunny and warm. Parkdale is about 20 minutes from the quaint town of Hood River. 
       
     .clear
 = image_tag('clarkes.jpg', width: '100%')
@@ -70,14 +72,14 @@
       %h3
         Lodging
       %p
-        Unfortunately the Hood River area during the summery is 
+        Hood River during the summer is 
         %i very
-        popular. All these other people have the nerve to be staying in the same place as our friends and family! This means that it would be best to book housing as soon as possible.
+        popular! This means that it would be best to book housing as soon as possible.
       %p
-        Most homes for rent require a 4 (or more!) night minimum during the summer. If you can stay that long, we think you'll find plenty to do! On the right, we have a spreadsheet that has quick summaries of many of the houses near downtown Hood River. You can find more houses online, with the most popular sites listed. Note that there is significant overlap between some of the sites - #{link_to 'hrvacations.com', 'http://www.hrvacations.com/'} lists many of its properties on #{link_to('homeaway.com', 'http://www.homeaway.com/')} and #{link_to 'vrbo.com', 'http://www.vrbo.com/'}.
+        Most homes for rent require a four (or more) night minimum during the summer. If you can stay that long, we think you'll find plenty to do! On the right, we have a spreadsheet that has quick summaries of many of the houses near downtown Hood River. You can find more houses online, with the most popular sites listed. Note that there is significant overlap between some of the sites - #{link_to 'hrvacations.com', 'http://www.hrvacations.com/'} lists many of its properties on #{link_to('homeaway.com', 'http://www.homeaway.com/')} and #{link_to 'vrbo.com', 'http://www.vrbo.com/'}.
 
     .clear
-= image_tag('mustache.jpg', width: '100%')
+= image_tag('christmas.jpg', width: '100%')
 #activities
   .white_section
     .sidebar
@@ -102,17 +104,43 @@
         %br
         = link_to('Stand-up paddleboarding', 'http://hoodriver.org/standup-paddle-boarding', target: '_blank')
       %h4
+        Breweries
+      .blurb
+        = link_to('Pfriem Family Brewers', 'http://pfriembeer.com', target: '_blank')
+        %br
+        = link_to('Double Mountain Brewery', 'doublemountainbrewery.com', target: '_blank')
+        %br 
+        = link_to('Full Sail Brew Pub', 'http://www.yelp.com/biz/full-sail-brew-pub-hood-river-2', target: '_blank')
+      %h4
         Other
       .blurb
         = link_to('Fruit Loop', 'http://hoodriverfruitloop.com/', target: '_blank')
+        %br
+        = link_to('Scenic Train', 'https://www.mthoodrr.com/', target: '_blank')
     .left_side
       %h3
         Activities
       %p
-        There are an amazing variety of activities to do in Hood River. We've listed just a few of them to the right. More to come!
+        There are an amazing variety of activities to do in Hood River. 
+      %p
+        .left_picture
+          = image_tag('railroad.jpg', width: '290px')
+        Downtown Hood River has a number of great restaurants, shops, wineries, and breweries. If you venture a bit further out of town, you can find plenty more fun things to do - world-class wind surfing and kite boarding, mountain biking, hiking, and a beautiful drive through the fruit orchards, to name just a few. Find more info using the links on the right.  
     .clear
 
-= image_tag('dubrovnik.jpg', width: '100%')  
+= image_tag('shadows.jpg', width: '100%')  
+
+#meet
+  .white_section
+    %h3 
+      How We Met
+    %p
+      We met at Starbucks, much to Katie's chagrin.
+    %p
+      Stay tuned for the rest of the story...
+      
+      
+= image_tag('starbucks.jpg', width: '100%')
 
 #rsvp
   .white_section
