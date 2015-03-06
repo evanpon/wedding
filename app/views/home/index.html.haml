@@ -1,15 +1,15 @@
 #header
   %ul
     %li
-      = link_to 'VENUE', '#venue'
+      = link_to 'VENUE', '#venue', {id: 'venue_link'}
     %li
-      = link_to 'LODGING', '#lodging'
+      = link_to 'LODGING', '#lodging', {id: 'lodging_link'}
     %li
-      = link_to 'ACTIVITIES', '#activities'
+      = link_to 'ACTIVITIES', '#activities', {id: 'activities_link'}
     %li
-      = link_to 'HOW WE MET', '#meet'
+      = link_to 'HOW WE MET', '#meet', {id: 'meet_link'}
     %li
-      = link_to 'RSVP', '#rsvp'
+      = link_to 'RSVP', '#rsvp', {id: 'rsvp_link'}
 
 #first_photo     
   = image_tag('plitvice.jpg', width: '100%')
@@ -223,4 +223,9 @@
 #closing_image      
   = image_tag('bend.jpg', width: '100%')
 
-      
+   
+:javascript
+  
+  // $('#evan').click(function() {
+  //   $('html,body').animate({scrollTop: $("#lodging").offset().top}, 800);
+  // })
