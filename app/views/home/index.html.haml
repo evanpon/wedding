@@ -209,23 +209,10 @@
           = f.text_field :name, placeholder: 'Your name'
         .field
           = f.text_field :guests, placeholder: 'Any guests?'
-        .field#attending
-          %label
-            %span.label
-              Attending
-            = f.check_box :attending, class: 'ios-switch' 
-            %span.switch
-    
         .field
-          = f.text_area :message, placeholder: 'Any message for us?'
+          = f.text_area :message, placeholder: 'Are you planning to attend?'
   
         = f.submit 'RSVP'
 #closing_image      
   = image_tag('bend.jpg', width: '100%')
 
-   
-:javascript
-  
-  // $('#evan').click(function() {
-  //   $('html,body').animate({scrollTop: $("#lodging").offset().top}, 800);
-  // })
