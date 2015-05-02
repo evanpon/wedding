@@ -9,7 +9,7 @@
     %li
       = link_to 'HOW WE MET', '#meet', {id: 'meet_link'}
     %li
-      = link_to 'RSVP', '#rsvp', {id: 'rsvp_link'}
+      = link_to 'REGISTRY', '#registry', {id: 'registry_link'}
 
 #first_photo     
   = image_tag('plitvice.jpg', width: '100%')
@@ -199,20 +199,25 @@
     
 = image_tag('starbucks.jpg', width: '100%')
 
-#rsvp
+#registry
   .white_section
-    %h3
-      RSVP
-    #rsvp_form
-      = form_for(@rsvp, remote: true) do |f|
-        .field
-          = f.text_field :name, placeholder: 'Your name'
-        .field
-          = f.text_field :guests, placeholder: 'Any guests?'
-        .field
-          = f.text_area :message, placeholder: 'Are you planning to attend?'
-  
-        = f.submit 'RSVP'
+    %h3 Registry
+    %p
+      We are currently working on our registry - we should have something up in just a couple days!
+/ #rsvp
+/   .white_section
+/     %h3
+/       RSVP
+/     #rsvp_form
+/       = form_for(@rsvp, remote: true) do |f|
+/         .field
+/           = f.text_field :name, placeholder: 'Your name'
+/         .field
+/           = f.text_field :guests, placeholder: 'Any guests?'
+/         .field
+/           = f.text_area :message, placeholder: 'Are you planning to attend?'
+/
+/         = f.submit 'RSVP'
 #closing_image      
   = image_tag('bend.jpg', width: '100%')
 
