@@ -112,7 +112,7 @@
         %span.important
           as soon as possible.
       %p
-        Most homes for rent require a four (or more) night minimum during the summer. If you can stay that long, we think you'll find plenty to do! On the right, we have a spreadsheet that has quick summaries of many of the houses near downtown Hood River. You can find more houses online, with the most popular sites listed. Note that there is significant overlap between some of the sites - #{link_to 'Hood River Vacations', 'http://www.hrvacations.com/'} lists many of its properties on #{link_to('HomeAway', 'http://www.homeaway.com/')} and #{link_to 'VRBO', 'http://www.vrbo.com/'}.
+        Most homes for rent require a four (or more) night minimum during the summer. If you can stay that long, we think you'll find plenty to do! On the right, we have a spreadsheet that has quick summaries of many of the houses near downtown Hood River. You can find more houses online, with the most popular sites listed. Note that there is significant overlap between some of the sites - #{link_to 'Hood River Vacations', 'http://www.hrvacations.com/', class: 'paragraph_link'} lists many of its properties on #{link_to('HomeAway', 'http://www.homeaway.com/', class: 'paragraph_link')} and #{link_to 'VRBO', 'http://www.vrbo.com/', class: 'paragraph_link'}.
 
     .clear
 = image_tag('christmas.jpg', width: '100%')
@@ -203,7 +203,12 @@
   .white_section
     %h3 Registry
     %p
-      We are currently working on our registry - we should have something up in just a couple days!
+      We are currently working on filling out our registry. For now, we have a few items listed on 
+      %nbsp
+      %span>= link_to('Amazon', 'http://www.amazon.com/registry/wedding/3B8LHYEJID2KC', class: 'paragraph_link')
+      = '.'
+      Your presence with us as we celebrate is by far the most important thing, so please don't feel obligated to give a gift.  
+      
 / #rsvp
 /   .white_section
 /     %h3

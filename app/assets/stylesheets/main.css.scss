@@ -16,6 +16,10 @@ a:link, a:visited {
   color: rgb(51, 76, 73);
 //  color: $orange;
 }
+.paragraph_link {
+  //text-decoration: underline;
+  color: $orange !important;
+}
 a:hover {
   text-decoration: underline;
 }
