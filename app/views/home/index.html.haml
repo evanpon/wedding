@@ -201,12 +201,22 @@
 
 #registry
   .white_section
+    #hummingbirds
+      = image_tag('Hummingbird_male.png', width: '240px')
+      = image_tag('Hummingbird_female.png', width: '240px')
+      Hummingbirds painted by Emily Sharp
     %h3 Registry
     %p
-      The most important thing to us is that you will make our wedding day special by just being there. However, if you wish to help us celebrate with a gift, we are registered at #{link_to('Crate & Barrel', 'http://www.crateandbarrel.com/gift-registry/evan-pon-and-katie-gilmer/r5331980', target: '_blank', class: 'paragraph_link')}, #{link_to('Amazon', 'http://www.amazon.com/registry/wedding/3B8LHYEJID2KC', target: '_blank', class: 'paragraph_link')}, and #{link_to('Thankful', 'https://thkfl.com/evanandkatie', target: '_blank', class: 'paragraph_link')}. We are planning to buy a house and any help with the ever-important household appliances is much appreciated!
+      
+      
+      The most important thing to us is that you will make our wedding day special by just being there. 
+      However, if you wish to help us celebrate with a gift, we are registered at #{link_to('Crate & Barrel', 'http://www.crateandbarrel.com/gift-registry/evan-pon-and-katie-gilmer/r5331980', target: '_blank', class: 'paragraph_link')}, #{link_to('Amazon', 'http://www.amazon.com/registry/wedding/3B8LHYEJID2KC', target: '_blank', class: 'paragraph_link')}, and #{link_to('Thankful', 'https://thkfl.com/evanandkatie', target: '_blank', class: 'paragraph_link')}. 
+      We are planning to buy a house and any help with the ever-important household appliances is much appreciated!
      
-      
-      
+
+
+
+/
 / #rsvp
 /   .white_section
 /     %h3
@@ -221,6 +231,6 @@
 /           = f.text_area :message, placeholder: 'Are you planning to attend?'
 /
 /         = f.submit 'RSVP'
+        
 #closing_image      
   = image_tag('bend.jpg', width: '100%')
-
