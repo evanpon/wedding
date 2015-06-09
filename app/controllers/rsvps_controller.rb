@@ -3,7 +3,7 @@ class RsvpsController < ApplicationController
   def create
     @rsvp = Rsvp.new(rsvp_params)
     @rsvp.name.strip!
-    @rsvp.guests.strip!
+    # @rsvp.guests.strip!
     @rsvp.message.strip!
     respond_to do |format|
       if @rsvp.save        
@@ -29,6 +29,6 @@ class RsvpsController < ApplicationController
   private
     # Never trust parameters from the scary internet, only allow the white list through.
     def rsvp_params
-      params.require(:rsvp).permit(:id, :name, :guests, :message, :attending)
+      params.require(:rsvp).permit(:id, :name, :message, :welcome_dinner, :ceremony, :no_events)
     end
 end

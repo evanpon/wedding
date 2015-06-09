@@ -34,7 +34,7 @@ a:hover {
   font-size: 32px;
   z-index: 2;
   line-height: 75px;
-  overflow: hidden;
+//  overflow: hidden;
   a {
     color: rgba(255, 255, 255, 0.75);
   }
@@ -59,6 +59,7 @@ h4 {
   font-size: 24px;
   color: $orange;
 }
+
 #first_photo {
   position: relative;
   -webkit-transform-style: preserve-3d;
@@ -88,9 +89,20 @@ h4 {
 .left_side {
   width: 70%;
 }
+.checkbox {
+  padding-left: 40px;
+  color: rgb(108, 108, 108);
+//  border: 1px solid blue;
+}
+.gray {
+  color: rgb(108, 108, 108);
+}
 p {
   padding-top: 25px;
   line-height: 130%;
+}
+p.minimal {
+  padding-top: 5px;
 }
 .blurb {
   font-size: 18px;

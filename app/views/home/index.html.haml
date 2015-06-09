@@ -3,6 +3,8 @@
     %li
       = link_to 'VENUE', '#venue', {id: 'venue_link'}
     %li
+      = link_to 'RSVP', '#rsvp', {id: 'rsvp_link'}
+    %li
       = link_to 'LODGING', '#lodging', {id: 'lodging_link'}
     %li
       = link_to 'ACTIVITIES', '#activities', {id: 'activities_link'}
@@ -20,28 +22,58 @@
 #venue
   .white_section
     .sidebar
-      %h4
-        When
-      .blurb
-        Afternoon
-        %br
-        Saturday, August 15th, 2015
-      %h4
-        Where
-      .blurb
-        Parkdale, OR
+
     .left_side
-      %h3 
-        Clarke Mountain Estate
-      %p
-        Our wedding will be at the Clarke Mountain Estate. This special location is the private home of a good friend of Katie's aunt, and the grounds boast beautiful flower gardens and a fantastic view of Mt. Hood. The cocktail hour and reception will follow at the same location.
+      %h4
+        Welcome dinner
+      %p.minimal
+        We'd love to welcome all of our guests to Hood River by feeding them Mexican food and blah blah blah. We will be hosting the picnic at the Waterfront Park in Hood River (#{link_to('map', 'https://www.google.com/maps/d/edit?mid=z8TLq5jFAWao.kzQSPR1Ygw1c&usp=sharing', target: '_blank', class: 'paragraph_link')}). The picnic will start at 5pm, and end at sunset. We will have Mexican food and drinks. We will have frisbees, soccer balls, kites, cornhole, other activities. The wind can be brisk there, so please dress appropriately, and practice your disc throwing in the wind. 
+      %br
+      %h4
+        Wedding ceremony and reception
+      %p.minimal
+        Our wedding will be at the Clarke Mountain Estate. This special location is the private home of a good friend of Katie's aunt, and the grounds boast beautiful flower gardens and a fantastic view of Mt. Hood. The cocktail hour and reception will follow at the same location. The wedding starts at 4:30pm. Reception starts at 6:30pm. We will have shuttles for guests staying in downtown Hood River, starting at 3pm. Dress code is semi-formal. There will be parking at the venue. Location is 5853 Berry Drive, Parkdale OR (#{link_to('map', 'https://www.google.com/maps/d/edit?mid=z8TLq5jFAWao.kVAbxcVu8690&usp=sharing', target: '_blank', class: 'paragraph_link')}). The route doesn't fully show up on Google Maps; you will need to follow the dirt road at the end of Berry Road to reach the venue. We will have balloons, signs, and maybe acrobats all pointing the way.
     
       %p
         The wedding and reception will both be outdoors, and we expect it to be sunny and warm. Parkdale is about 20 minutes from the quaint town of Hood River. 
+        
+      %br
+      %h4
+        Farewell picnic
+      %p.minimal
+        Jackson Park (#{link_to('map', 'https://www.google.com/maps/d/edit?mid=z8TLq5jFAWao.ktY_9CNyCd7Y&usp=sharing', target: '_blank', class: 'paragraph_link')}).
       
     .clear
 = image_tag('clarkes.jpg', width: '100%')
+ 
+#rsvp
+  .white_section
+    %h3
+      RSVP
+    #rsvp_form
+      = form_for(@rsvp, remote: true) do |f|
+        .field
+          = f.text_field :name, placeholder: 'Name(s)'
+        / .field
+        /   = f.text_field :guests, placeholder: 'Who are you RSVPing for?'
+        .field
+          .gray
+            Which events will you attend?
+          .checkbox
+            = f.check_box :welcome_dinner
+            Friday welcome dinner
+          .checkbox
+            = f.check_box :ceremony
+            Ceremony/reception
+          .checkbox
+            = f.check_box :no_events
+            Unfortunately cannot attend
+        .field
+          = f.text_area :message, placeholder: 'Any message for us?'
 
+        = f.submit 'RSVP'
+
+= image_tag('punch.jpg', width: '100%')
 
 #lodging
   .white_section
@@ -59,19 +91,9 @@
             .subnote
               Rooms start at $90.
           %li
-            = link_to('Columbia Gorge Hotel', 'http://www.columbiagorgehotel.com/', target: '_blank')
-            .subnote
-              Rooms start at $269.
-          %li
             = link_to('Comfort Suites', 'http://www.comfortsuites.com/hotel-hood_river-oregon-OR066', target: '_blank')
             .subnote
               Rooms start at $209. 
-          %li
-            = link_to('Hood River Inn', 'http://www.hoodriverinn.com/', target: '_blank')
-            .subnote
-              Rooms start at $140? 
-              %br
-              No reservations until 60 days prior. 
           %li
             = link_to('Hood River Suites', 'http://www.hoodriversuites.com/', target: '_blank')
             .subnote
@@ -93,8 +115,6 @@
       .blurb
         %ul.sidebar_links
           %li
-            = link_to('Spreadsheet of homes ', 'https://docs.google.com/spreadsheets/d/1twnG8jPVD6hZ6t2-D8_U3ryPT-EFOf0NLeEu337-mgQ/edit#gid=0', target: '_blank')
-          %li
             = link_to('Hood River Vacations', 'http://www.hrvacations.com/', target: '_blank')
           %li
             = link_to('VRBO', 'http://www.vrbo.com/vacation-rentals/usa/oregon/mt-hood-the-gorge/hood-river', target: '_blank')
@@ -112,9 +132,10 @@
         %span.important
           as soon as possible.
       %p
-        Most homes for rent require a four (or more) night minimum during the summer. If you can stay that long, we think you'll find plenty to do! On the right, we have a spreadsheet that has quick summaries of many of the houses near downtown Hood River. You can find more houses online, with the most popular sites listed. Note that there is significant overlap between some of the sites - #{link_to 'Hood River Vacations', 'http://www.hrvacations.com/', class: 'paragraph_link'} lists many of its properties on #{link_to('HomeAway', 'http://www.homeaway.com/', class: 'paragraph_link')} and #{link_to 'VRBO', 'http://www.vrbo.com/', class: 'paragraph_link'}.
+        Most homes for rent require a four (or more) night minimum during the summer. If you can stay that long, we think you'll find plenty to do! We have reserved some shuttles to help guests from downtown Hood River to the wedding venue. 
 
     .clear
+
 = image_tag('christmas.jpg', width: '100%')
 #activities
   .white_section
@@ -216,21 +237,6 @@
 
 
 
-/
-/ #rsvp
-/   .white_section
-/     %h3
-/       RSVP
-/     #rsvp_form
-/       = form_for(@rsvp, remote: true) do |f|
-/         .field
-/           = f.text_field :name, placeholder: 'Your name'
-/         .field
-/           = f.text_field :guests, placeholder: 'Any guests?'
-/         .field
-/           = f.text_area :message, placeholder: 'Are you planning to attend?'
-/
-/         = f.submit 'RSVP'
-        
+
 #closing_image      
   = image_tag('bend.jpg', width: '100%')

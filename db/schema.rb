@@ -11,16 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150128221852) do
+ActiveRecord::Schema.define(version: 20150609042609) do
 
   create_table "rsvps", force: true do |t|
     t.string   "name"
     t.string   "email"
     t.boolean  "attending"
     t.string   "guests"
-    t.string   "message",    limit: 4000
+    t.string   "message",        limit: 4000
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "welcome_dinner",              default: false
+    t.boolean  "ceremony",                    default: false
+    t.boolean  "no_events",                   default: false
   end
 
 end
